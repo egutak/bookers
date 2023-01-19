@@ -51,11 +51,12 @@
   <%= form_with model: Book.new do |f| %>
    <div class="field">
 
-   <a>Title</a>
+   <div>Title</div>
     <%= f.text_field :title %>
    </div>
+
    <div class="field">
-    <a>Title</a>
+    <div>Body</div>
     <%= f.text_area :body %>
    </div>
 
