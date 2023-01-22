@@ -1,11 +1,8 @@
-<!--<html>-->
- <!--<head>-->
- <!-- <title>WebCampBackendNew</title>-->
- <!--</head>-->
+  <%= flash[:notice] %>
 
   <h1>Books</h1>
   <% if @book.errors.any? %>
-   <%=@book.errors.count %>件のエラーが発生しました
+   <%=@book.errors.count %>errors prohibited this book from being saved:
    <ul>
     <% @book.errors.full_messages.each do |message| %>
      <li><%= message %></li>
@@ -62,7 +59,3 @@
 
     <%= f.submit 'Create Book' %>
   <% end %>
-
- </body>
-
-<!--</html>-->
